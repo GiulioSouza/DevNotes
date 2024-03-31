@@ -6,6 +6,8 @@ const addNoteBtn = document.querySelector(".add-note")
 
 const searchInput = document.querySelector("#search-input")
 
+const exportBtn = document.querySelector("#export-button")
+
 const showNotes = () => {
     cleanNotes()
 
@@ -178,6 +180,21 @@ const searchNotes = (search) => {
     showNotes()
 }
 
+const exportData = () => {
+    const notes = getNotes()
+
+    const csvString = [
+        ["ID", "Content", "Fixed?"],
+        ...notes.map((note) => [note.id, note.content, note.fixed])
+    ].map((element) => element.join(",")).join("\n")
+
+    const element = document.createElement("a")
+    element.href = "data:text/csv;charset=utf-8", encodeURI(csvString)
+    element.target = "_blank"
+    element.download = "notes.csv"
+    element.click()
+}
+
 //Events
 addNoteBtn.addEventListener("click", () => addNote())
 
@@ -192,6 +209,10 @@ noteInput.addEventListener("keydown", (event) => {
     if(event.key === "Enter"){
         addNote()
     }
+})
+
+exportBtn.addEventListener("click", () => {
+    exportData()
 })
 
 //START
