@@ -16,6 +16,6 @@ Unfortunately I couldn't work on the JS part by myself, but concepts and techniq
 
   Your notes are saved in local storage(I want to point out that with so much crud I made, it was easy to understand this concept, even though it was different from what I did with postgres and etc.)
 
-  [x]Complete the first stage of the project
-  []Use a database to save notes
-  []Make it Responsive
+  - [x] Complete the first stage of the project
+  - [] Use a database to save notes
+  - [] Make it Responsive
