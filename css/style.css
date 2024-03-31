@@ -149,7 +149,7 @@ body {
     background-color: #3c3c3f;
 }
 
-@media(max-width: 450px){
+@media(max-width: 1080px){
     body{
         max-width: 450px;
     }
