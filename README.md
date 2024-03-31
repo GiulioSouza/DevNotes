@@ -18,4 +18,4 @@ Unfortunately I couldn't work on the JS part by myself, but concepts and techniq
 
   - [x] Complete the first stage of the project
   - [ ] Use a database to save notes
-  - [ ] Make it responsive
+  - [x] Make it responsive
