@@ -14,9 +14,10 @@ Este é mais um projeto que fiz durante o “Curso de Treinamento Front-end - HT
 
 ### Bônus
 Suas notas são salvas no armazenamento local (gostaria de ressaltar que, com todo o “crud” que fiz, foi fácil entender esse conceito, mesmo que seja diferente do que fiz com o PostgreSQL, etc.)
-[x] Concluir a primeira etapa do projeto
-[ ] Usar um banco de dados para salvar as notas
-[x] Torná-lo responsivo
+ - [x] Concluir a primeira etapa do projeto
+ - [ ] Usar um banco de dados para salvar as notas
+ - [x] Torná-lo responsivo
+
 
 ENG
 # DevNotes
